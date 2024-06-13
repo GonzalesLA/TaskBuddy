@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".instructions">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/taskbuddyplainback"
+        android:layout_margin="0dp" />
+
+    <ImageView
+        android:id="@+id/inst_box"
+        android:layout_width="300dp"
+        android:layout_height="530dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="646dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="49dp"
+        android:text="TaskBuddy works by keeping track of your list and making sure you keep your tasks organized, Taskbuddy requires you to write your task down to either do it now or later, and if you accomplish/ finish said task you may delete it to show that you are done with that task."
+        android:textColor="@color/white"
+        android:fontFamily="@font/orbitron_bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/orbitron_bold"
+        android:text="How TB Works"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/inst_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="18dp"
+        android:text="Back"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:fontFamily="@font/orbitron_bold"/>
+
+</RelativeLayout>
